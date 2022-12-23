@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+    src: url(../fonts/NunitoSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Yeseva One', cursive;
+    src: url(../fonts/YesevaOne-Regular.ttf);
+  }
+  body{
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+  }
+  body * {
+    box-sizing: border-box;
+  }
+  
+  .section{
+    background: #131313;
+    padding-top: 107px;
+    height: 783px;              
+  }
+  .projects-conteiner{
+    margin: 0px auto;
+    max-width: 1256px;
+    height: 552px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  .projects-list{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .projects-li{
+    margin-right: 60px;
+    font-family: Yeseva One;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;  
+  }
+  .projects-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    }
+  .projects-link:hover{
+    color:#E3B873;
+    text-decoration: none;
+    border-bottom: 1px #E3B873 solid;
+    padding-bottom: 5px;
+  }
+  .projects-content{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 483px;
+    justify-content: space-between;
+  }
+  .projects-content-left{
+    width: 442px;
+    height: 482px;
+  }
+  .title-h2-projects{
+    font-family: Yeseva One;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 0;
+  }
+  .paragraph-projects{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .grid-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: auto;
+  }
+  .title-h3-project{
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+  .grid-item p{
+    font-family: Nunito Sans;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+  .image-content{
+    margin-top: 40px;
+    display: flex;
+    max-width: 215px;
+    max-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slider__arrows{
+    color: #fff;
+    font-size: 41px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .slider__dots{
+    display: flex;
+  }
+  .slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  .slider__dots-item:hover, .slider__dots-item.active {
+    background: #fff;
+  }
+  .slider__images {
+    position: relative;
+    width: 680px;
+    height: 482px;
+  }
+  .slider__images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 800ms ease;
+  }
+  .slider__images .image.active {
+    opacity: 1;
+  }
+    
+  
+    /* <<< media screen >>>*/
+  
+    @media screen and (min-width: 375px) and (max-width: 768px) {
+      
+    
+      .section-two{
+        background: #131313;
+        padding-top: 36px;
+        height: 841px;
+      }
+      .projects-conteiner{
+        max-width: 375px;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+      .projects-list{
+        display: none;
+      }
+      .projects-content{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        height: 483px;
+        justify-content: space-between;
+      }
+      .projects-content-left{
+        max-width: 442px;
+        height: 482px;
+        padding-right: 10px;
+      }
+      .title-h2-projects{
+        font-size: 22px;
+        line-height: 138.6%;
+        letter-spacing: -0.07em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #E3B873;
+        margin-top: 0;
+      }
+      .paragraph-projects{
+        width: 338px;
+        font-size: 11px;
+        line-height: 158.48%;
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .slider{
+        background-image: url(../images/Group79.png);
+        width: 340px;
+        height: 240px;
+        margin-top: 72px;
+      }
+      .grid-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-rows: auto;
+      }
+      .title-h3-project{
+        font-size: 14px;
+        line-height: 138.6%;
+        text-transform: uppercase;
+        color: #E3B873;
+      }
+      .grid-p{
+        font-size: 11px;
+        line-height: 135.84%;
+        color: #FFFFFF;
+      }
+      .image-content{
+        display: none;
+      }
